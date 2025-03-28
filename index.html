@@ -25,49 +25,80 @@
     <!-- Barra de navegación -->
 
     <header>
-        <nav class="navbar navbar-expand-lg bg-white fixed-top shadow p-3 ">
-            <div class="container">
-                <!-- Logo -->
-                <a class="navbar-brand" href="index.html">
-                    <img src="img/Logo.png" alt="logotipo mayores bna colores naranja y celeste" height="50">
-                </a>
+            <nav class="navbar navbar-expand-lg bg-white fixed-top shadow p-3 ">
+                <div class="container">
+                    <!-- Logo -->
+                    <a class="navbar-brand" href="index.html">
+                        <img src="img/Logo.png" alt="logotipo mayores bna colores naranja y celeste" height="50">
+                    </a>
 
-                <!-- Botón de menú responsive -->
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
+                    <!-- Botón de menú responsive -->
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
 
-                <!-- Links de navegación -->
-                <div class="collapse navbar-collapse" id="navbarNav">
-                    <ul class="navbar-nav ms-auto">
-                        <li class="nav-item">
-                            <a class="nav-link fs-5 px-3 fw-bold texto-azul" href="index.html">INICIO</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link fs-5 px-3 fw-bold texto-azul" href="pages/bna+.html">BNA+</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link fs-5 px-3 fw-bold texto-azul" href="pages/descuentos-y-promociones.html">DESCUENTOS Y
-                                PROMOCIONES</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link fs-5 px-3 fw-bold texto-azul" href="pages/nosotros.html">NOSOTROS</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="btn btn-warning fs-5 px-3 fw-bold text-white rounded-pill fondo-naranja"
-                                href="pages/solicitud-tarjeta-de-credito.html">PEDÍ TU TARJETA</a>
-                        </li>
-                    </ul>
+                    <!-- Links de navegación -->
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                        <ul class="navbar-nav ms-auto">
+                            <li class="nav-item">
+                                <a class="nav-link fs-5 px-3 fw-bold texto-azul" href="index.html">INICIO</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link fs-5 px-3 fw-bold texto-azul" href="pages/bna+.html">BNA+</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link fs-5 px-3 fw-bold texto-azul" href="pages/descuentos-y-promociones.html">DESCUENTOS Y
+                                    PROMOCIONES</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link fs-5 px-3 fw-bold texto-azul" href="pages/nosotros.html">NOSOTROS</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="btn btn-warning fs-5 px-3 fw-bold text-white rounded-pill fondo-naranja"
+                                    href="pages/solicitud-tarjeta-de-credito.html">PEDÍ TU TARJETA</a>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
-            </div>
-        </nav>
+            </nav>
 
     </header>
 
     <!-- Cuerpo de la página -->
 
     <main>
+        <div id="carouselExample" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="img/carousel-sra.jpg" class="d-block w-100 object-fit-cover" alt="Imagen 1">
+                </div>
+                <div class="carousel-item">
+                    <img src="img/carousel-bna+.jpg" class="d-block w-100 object-fit-cover" alt="Imagen 2">
+                </div>
+                <div class="carousel-item">
+                    <img src="img/carousel-estafa.jpg" class="d-block w-100 object-fit-cover" alt="Imagen 3">
+                </div>
+            </div>
+        
+            <!-- Botones de navegación -->
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Anterior</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Siguiente</span>
+            </button>
+        
+            <!-- Indicadores -->
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExample" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExample" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExample" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+        </div>
+
         <h1>
             El sitio web para los jubilados del Nación
         </h1>
@@ -75,7 +106,6 @@
         <!-- Bento Grid -->
 
         <div class="contenedor">
-            <div class="caja carousel">CAROUSEL NOVEDADES</div>
 
             <div class="caja texto">En mayores BNA usted va a encontrar, con una interfaz clara y accesible, todo lo que
                 su Banco tiene para ofrecerle. Seleccione alguna de las siguientes tarjetas para obtener información
@@ -103,11 +133,10 @@
 
             <a href="pages/descuentos-y-promociones.html" class="caja descuentos">
                 <div>
-                    <p>DESCUENTOS <br>Y <br>PROMOCIONES</p>
+                    <p>DESCUENTOS Y <br>PROMOCIONES</p>
                     <img src="img/ilustracion-promos.svg" alt="Descuentos y promociones">
                 </div>
             </a>
-
 
             <div class="caja enlaces">ENLACES Y TELÉFONOS ÚTILES
                 <img src="img/ilustracion-enlaces.svg" alt="Enlaces y teléfonos útiles">
@@ -125,7 +154,7 @@
                 <img src="img/ilustracion-prestamos.svg" alt="Información sobre préstamos">
             </div>
 
-            <div class="caja tarjetas">TARJETAS
+            <div class="caja tarjetas">TARJETAS <br> DE CRÉDITO
                 <img src="img/ilustracion-tarjetas.svg" alt="Información y ayuda sobre tarjetas de crédito">
             </div>
 

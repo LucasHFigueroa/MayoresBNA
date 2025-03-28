@@ -197,13 +197,15 @@ footer{
     grid-template-columns: repeat(4, 1fr);
     margin: 40px auto;
     max-width: 80%;
-    grid-template-columns: repeat(4, 1fr);
     grid-auto-rows: minmax(260px, auto);
-    grid-gap: 32px;
+    grid-gap: 40px;
 }
 .contenedor a{
     text-decoration: none;
     color: inherit;
+}
+.contenedor img{
+    max-width: 200px;
 }
 
 .caja{
@@ -215,34 +217,29 @@ footer{
 .caja p{
     font-size: 30px;
 }
-.carousel{
-    grid-column: 1/3;
-    grid-row: 1/3;
-    background-color: #B6E6F2;
-    border: 4px solid #109ED4;
-}
+
 .texto{
-    grid-column: 3/5;
+    grid-column: 1/3;
     grid-row: 1/2;
     text-align: justify;
 }
 .asistente{
-
-    grid-column: 4/5;
-    grid-row: 2/3;
+    grid-column: 3/4;
+    grid-row: 1/2;
 }
 .bna{
-    grid-column: 3/4;
-    grid-row: 2/3;
+    grid-column: 4/5;
+    grid-row: 1/2;
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    align-items: center;
     background-color: #FFEBC7;
     border: 4px solid #FF9807;
 }
+
 .atm{
     grid-column: 1/2;
-    grid-row: 3/5;
+    grid-row: 2/4;
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
@@ -252,16 +249,18 @@ footer{
 }
 .tienda{
     grid-column: 2/3;
-    grid-row: 3/4;
+    grid-row: 2/3;
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    align-items: center;
     background-color: #B6E6F2;
     border: 4px solid #109ED4;
+    gap: 20px;
 }
+
 .descuentos{
     grid-column: 3/5;
-    grid-row: 3/4;
+    grid-row: 2/3;
     display: flex;
     background-color: #FFEBC7;
     border:  4px solid #F39555;
@@ -275,7 +274,7 @@ footer{
 
 .enlaces{
     grid-column: 2/3;
-    grid-row: 4/5;
+    grid-row: 3/4;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -286,18 +285,19 @@ footer{
 }
 .homebanking{
     grid-column: 3/4;
-    grid-row: 4/5; 
+    grid-row: 3/4; 
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    align-items: center;
     background-color: #FFEBC7;
     border: 4px solid #F39555;
     gap: 20px;
 }
 .estafas{
     grid-column: 4/5;
-    grid-row: 4/5;
+    grid-row: 3/4;
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: space-between;
     background-color: #B6E6F2;
@@ -306,7 +306,7 @@ footer{
 }
 .prestamos{
     grid-column: 1/2;
-    grid-row: 5/6;
+    grid-row: 4/5;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -318,16 +318,17 @@ footer{
 }
 .tarjetas{
     grid-column: 2/4;
-    grid-row: 5/6;
+    grid-row: 4/5;
     display: flex;
     align-items: center;
     justify-content: space-around;
     background-color: #FFEBC7;
     border:  4px solid #F39555;
+    gap: 20px;
 }
 .inversiones{
     grid-column: 4/5;
-    grid-row: 5/6;
+    grid-row: 4/5;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -541,3 +542,81 @@ hr {
 
 
 /* --------------------------------------------------------  Media Queries  -------------------------------------------------------- */
+
+/* solicitud de tarjeta */
+
+@media screen and (max-width: 576px) {
+    .navbar-brand img {
+        height: 40px; /* Reduce el tamaño */
+        width: auto; 
+    }
+    
+    /* @MQ pag solicitud de tarjeta */
+    
+    .top-solicitud {
+        flex-direction: column; 
+        gap: 40px;
+        margin: 5%;
+    }
+    .top-solicitud img{
+        max-width: 100%;
+    }
+
+    .top-solicitud div {
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+    }
+
+    #solicitud-tarjeta {
+        max-width: 90%; 
+        padding: 20px; 
+        gap: 15px; 
+    }
+
+    #solicitud-tarjeta input[type="number"],
+    #solicitud-tarjeta input[type="email"] {
+        width: 100%; 
+    }
+
+    /* @MQ INICIO - BENTO */
+
+    .carousel-inner img {
+        height: 140px;
+        width: auto; 
+        margin: 0 auto; 
+    }
+    
+    .contenedor {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .caja {
+        width: 100%;  
+        height: 100%; 
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 20px;
+    }
+
+    .caja img{
+        max-width: 100%;
+        height: auto;    
+        object-fit: contain; 
+    }
+    .caja div{
+        width: 100%; 
+        height: auto; 
+        align-items: center;
+    }
+    .caja.descuentos div {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        gap: 0px;
+    }
+}
