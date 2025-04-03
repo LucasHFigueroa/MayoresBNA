@@ -30,7 +30,7 @@
             <div class="container">
                 <!-- Logo -->
                 <a class="navbar-brand" href="../index.html">
-                    <img src="../img/Logo.png" alt="logotipo mayores bna colores naranja y celeste" height="50">
+                    <img src="../img/logo.svg" alt="logotipo mayores bna colores naranja y celeste" height="40">
                 </a>
 
                 <!-- Botón de menú responsive -->
@@ -68,71 +68,62 @@
 
     <!-- Cuerpo de la página -->
 
-    <main class="contenido-nosotros">
-        <aside class="contacto">
-            <img src="../img/foto-perfil.jpeg" alt="foto de perfil Lucas Figueroa">
-            <p>Lucas Hernan Figueroa</p>
-            <span>Empleado Banco Nación</span>
-            <a href="https://www.linkedin.com/in/lucas-hernan-figueroa/"> Mi perfil en LinkedIn</a>
-            <a href="https://www.behance.net/lucasfigueroa9">Portfolio de proyectos en Behance</a>
-            <a href="mailto:lucashernanfigueroa@gmail.com">Lucashernanfigueroa@gmail.com</a>
-        </aside>
-        <div>
-            <h2>Sobre Mayores BNA</h2>
-            <p>
-                "MayoresBNA.com.ar" es un proyecto de sitio web que estoy desarrollando en el curso "Desarrollo Web -
-                HTML y CSS" en Coderhouse.com
-            </p>
-            <p>
-                Elegí este tema porque actualmente trabajo en el anexo de Tigre del Banco Nación, y el público con el
-                que más interactúo son los jubilados. El sitio oficial del BNA para adultos mayores,
-                <a href="https://mayoresactivos.com.ar/">www.mayoresactivos.com.ar</a>, y a pesar de ser un muy buen
-                sitio web, es poco conocido. Mi hipótesis es que carece de un distintivo visual que lo
-                identifique claramente como parte del Banco Nación. Un caso similar es 
-                <a href="https://mayoresconectados.com.ar/">www.mayoresconectados.com.ar/</a>,
-                lanzado por la empresa EXO (compañía de computadoras de la reglamentación N°299). Por eso, decidí
-                agregar "BNA" al nombre de mi proyecto, para que los usuarios mayores lo reconozcan como un sitio
-                oficial de la familia Nación.
-            </p>
-            <a href="https://mayoresactivos.com.ar/"><img src="../img/mayoresactivos.jpg" alt="captura de pantalla del sitio web mayoresactivos.com.ar"></a>
-            <h2>Accesibilidad: Un Elemento Clave</h2>
-            <p>
-                Mientras desarrollaba el sitio, atendí a un cliente con ceguera y observé cómo utilizaba la función
-                "TalkBack" de Google para operar con el banco. Esto despertó mi interés en la accesibilidad digital, por
-                lo que investigué más sobre el tema. Incorporé tipografías en negrita, evité el uso de fotografías como
-                fondos y del color blanco para tipografías (lo mayor posible), también se han corregido etiquetas de
-                descripción en imágenes
-                y se ha decidido optar por un diseño sencillo que evite la fatiga visual del usuario.
-            </p>
-            <h2>Aplicación de Diseño y Desarrollo Web</h2>
-            <p>
-                En el proceso se me fueron ocurriendo ideas de todo tipo, haciendo benchmarking en los otros sitios del
-                banco noté que cada uno de ellos tiene distintas configuraciones de colores y elementos, por lo que a
-                futuro sugiero realizar un Design System que le dará mayor consistencia a la marca "BNA". También
-                consideré diseñar
-                un HomeBanking exclusivo para adultos mayores, optimizado para quienes tienen disminución visual.</p>
-            <p>Sin embargo, mi objetivo principal era aprender HTML y CSS, así que decidí enfocarme en la experiencia de
-                compra del cliente jubilado. Para ello:</p>
+<main>
+    <div class="container mt-5">
+        <div class="row altura p-5">
+            <!-- Aside (Perfil) -->
+            <aside class="col-12 col-md-3 text-center bg-light py-5 rounded shadow top-0" >
+                <img src="../img/foto-perfil.jpeg" class="img-fluid rounded-circle mb-4 w-75" alt="foto de perfil Lucas Figueroa">
+                <p class="fw-bold text-center h4 texto-azul">Lucas Hernan Figueroa</p>
+                <p class="fw-semibold text-center h5">Empleado del Banco Nación</span>
+                <br><br>
+                <span class="fw-normal">Desde que descubrí las transformaciones digitales me propuse capacitarme en mejorar las experiencias de los usuarios con sus interfaces.</span>
+                <div class="d-flex flex-column mt-3 align-items-center">
+                    <a class="btn btn-primary mb-2 w-75" href="https://www.linkedin.com/in/lucas-hernan-figueroa/">LinkedIn</a>
+                    <a class="btn btn-info mb-2 w-75" href="https://www.behance.net/lucasfigueroa9">Behance</a>
+                    <a class="btn btn-danger w-75" href="mailto:lucashernanfigueroa@gmail.com">Email</a>
+                </div>
+            </aside>
 
-            <ul>
-                <li>Diseñé una <a href="../index.html">página de inicio</a> con formato "bento", lo que me permitió
-                    practicar CSS Grid y crear un diseño moderno.</li><br>
-                <li>Se destacan los <a href="descuentos-y-promociones.html">descuentos y beneficios</a> de las tarjetas
-                    de crédito BNA, lo que me ayudó a practicar la creación de "cards" en CSS.</li><br>
-                <li>Incluí una <a href="bna+.html">sección sobre BNA+</a>, con videotutoriales sobre sus funciones
-                    principales y una FAQ con preguntas frecuentes, donde utilicé Flexbox y elementos multimedia
-                    (imágenes y videos de YouTube).</li><br>
-                <li>Finalmente, creé una página para que los clientes puedan <a
-                        href="solicitud-tarjeta-de-credito.html">solicitar su tarjeta</a>, donde practiqué el uso de
-                    formularios en HTML.</li>
-            </ul>
-            <p>A futuro se implementará JavaScript y se seguirá mejorando MayoresBNA. Si querés decirme algún
-                comentario, posibilidad de mejora, crítica, o simplemente un mensaje de aliento, te lo voy a agradecer,
-                aca al costado hay links donde presento proyectos que he desarrollado en otros cursos, te invito a darte
-                una vuelta. Saludos!</p>
+            <!-- Contenido Principal -->
+            
+            <div class="col-12 col-md-9 ">
+                <div class="mt-4 px-md-5">
+                    <h2 class="mb-4">Sobre Mayores BNA</h2>
+                    <p>"MayoresBNA.com.ar" es un proyecto de sitio web que estoy desarrollando en el curso "Desarrollo Web - HTML y CSS" en Coderhouse.com</p>
+
+                    <p>Elegí este tema porque actualmente trabajo en el anexo de Tigre del Banco Nación, y el público con el que más interactúo son los jubilados. l sitio oficial del BNA para adultos mayores, <a href="https://mayoresactivos.com.ar/">www.mayoresactivos.com.ar</a>, a pesar de ser un muy buen sitio web, es poco conocido. Mi hipótesis es que carece de un distintivo visual y el nombre que lo identifique claramente como parte del Banco Nación. Un caso similar es <a href="https://mayoresconectados.com.ar/">www.mayoresconectados.com.ar/</a>, lanzado por la empresa EXO (compañía de computadoras de la reglamentación N°299).</p>
+                    <p>Por eso, decidí agregar "BNA" al nombre de mi proyecto, para que los usuarios mayores lo reconozcan como un sitio oficial de la familia Nación.</p>
+                    <img src="../img/mayoresactivos.jpg" class="img-fluid mx-auto d-block my-5 " alt="captura de pantalla del sitio web mayoresactivos.com.ar">
+
+                    <hr class="my-5">
+
+                    <h2>Accesibilidad: Un Elemento Clave</h2>
+                    <p>Mientras desarrollaba el sitio, atendí a un cliente con ceguera y observé cómo utilizaba la función "TalkBack" de Google para operar con el banco. Esto despertó mi interés en la accesibilidad digital, por lo que investigué más sobre el tema.
+                    Para mejorar la accesibilidad, incorporé tipografías en negrita, evité el uso de fotografías como fondo y reduje al mínimo el uso de tipografías en color blanco. También corregí las etiquetas de descripción en imágenes y opté por un diseño sencillo que evita la fatiga visual del usuario.</p>
+
+                    <hr class="my-5">
+
+                    <h2>Aplicación de Diseño y Desarrollo Web</h2>
+                    <p>En el proceso, se me fueron ocurriendo ideas de todo tipo. Haciendo benchmarking en los otros sitios del banco, noté que cada uno tiene distintas configuraciones de colores y elementos. Por eso, a futuro sugiero desarrollar un Design System, que le daría mayor consistencia a la marca "BNA". También pensé en diseñar un Home Banking exclusivo para adultos mayores, optimizado para quienes tienen disminución visual.</p>
+                    <p>Sin embargo, mi objetivo principal era aprender HTML y CSS, así que decidí enfocarme en la experiencia de compra del cliente jubilado. Para ello:</p>
+                    <div class="d-flex justify-content-center my-4">
+                        <ul class="list-unstyled fw-bold">
+                            <li>✅Diseñé una <a href="../index.html">página de inicio</a> con formato "bento", lo que me permitió practicar CSS Grid.</li>
+                            <li>✅Se destacan los <a href="descuentos-y-promociones.html">descuentos y beneficios</a> de las tarjetas de crédito BNA.</li>
+                            <li>✅Incluí una <a href="bna+.html">sección sobre BNA+</a>, con videotutoriales y preguntas frecuentes.</li>
+                            <li>✅Finalmente, creé una página para <a href="solicitud-tarjeta-de-credito.html">solicitar una tarjeta</a>.</li>
+                        </ul>
+                    </div>
+
+                    <p>A futuro se implementará JavaScript y se seguirá mejorando MayoresBNA.</p>
+                    <p>Si querés decirme algún comentario, sugerencia, crítica o simplemente un mensaje de aliento, te lo voy a agradecer. Acá al costado hay links donde presento proyectos que he desarrollado en otros cursos, te invito a darte una vuelta.</p>
+                    <p>¡Saludos! 🚀</p>
+                </div>
+            </div>
         </div>
-    </main>
-
+    </div>
+</main>
     <!-- Pie de página -->
 
     <footer>
