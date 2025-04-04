@@ -548,7 +548,7 @@ hr {
 
 @media screen and (max-width: 576px) {
     .navbar-brand img {
-        height: 40px; /* Reduce el tamaño */
+        height: 30px; /* Reduce el tamaño */
         width: auto; 
     }
     
@@ -583,7 +583,7 @@ hr {
     /* @MQ INICIO - BENTO */
 
     .carousel-inner img {
-        height: 140px;
+        height: 160px;
         width: auto; 
         margin: 0 auto; 
     }
@@ -602,7 +602,6 @@ hr {
         align-items: center;
         padding: 20px;
     }
-
     .caja img{
         max-width: 100%;
         height: auto;    
