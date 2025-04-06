@@ -480,8 +480,51 @@ hr {
 .contacto span{
     text-align: center;
 }
+
+.sombra-azul {
+    box-shadow:
+        inset 0 1px 3px rgba(0, 123, 255, 0.2),  
+        0 4px 12px rgba(0, 123, 255, 0.3);     
+    transition: box-shadow 0.3s ease, transform 0.2s ease;
+    border-radius: 1rem; 
+    background: #ffffff; 
+}
+
+.sombra-azul:hover {
+    box-shadow:
+        inset 0 1px 3px rgba(0, 123, 255, 0.2),
+        0 6px 20px rgba(0, 123, 255, 0.4);
+    transform: translateY(-2px);
+}
+
 .altura{
     align-items: flex-start;
+}
+
+/* Sombra azul elegante */
+.shadow-blue {
+    box-shadow: 0 0.5rem 1.2rem rgba(0, 91, 187, 0.15);
+}
+
+  /* Enlaces de la sidebar */
+.sidebar-link {
+    display: block;
+    padding: 0.5rem 0.75rem;
+    border-radius: 0.5rem;
+    text-decoration: none;
+    color: #333;
+    font-weight: 500;
+    transition: background-color 0.3s, color 0.3s;
+}
+.sidebar-link:hover {
+    transform: translateX(5px);
+}
+  /* Hover y foco accesible */
+.sidebar-link:hover,
+.sidebar-link:focus {
+    background-color: #005bbb22;
+    color: #005bbb;
+    outline: none;
 }
 /* --------------------------------------------------------  Solicitud de tarjeta  -------------------------------------------------------- */
 
