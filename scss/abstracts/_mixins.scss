@@ -1,0 +1,6 @@
+@mixin texto-parrafo {
+    color: $color-texto;
+    font-size: $font-md;
+    font-weight: bold;
+    text-align: justify;
+}
