@@ -1,3 +1,18 @@
+@import '../abstracts/_variables.scss';
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    font-family: $fuente-principal;
+}
+
 main {
     margin-top: 80px;
     background-image: url('../img/background.jpg');
@@ -5,8 +20,9 @@ main {
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-position: center;
+}
 
-    p {
-        @include texto-parrafo;
-    }
+hr {
+    border: 0.5px solid black;
+    margin: 10px ;
 }

@@ -1,5 +1,12 @@
     @use 'abstracts/variables';
     @use 'abstracts/mixins';
-    @use 'base/typography';
+    @use 'abstracts/maps';
     @use 'base/base';
-    @use 'base/reset';
+    @use 'base/typography';
+    @use 'components/forms';
+    @use 'components/helpers';
+    @use 'components/sidebar';
+    @use 'layout/header';
+    @use 'layout/footer';
+    @use 'layout/grid';
+    @use 'pages/solicitud-tarjeta';

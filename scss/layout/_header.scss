@@ -1,0 +1,11 @@
+@import '../abstracts/variables';
+@import '../abstracts/mixins';
+
+
+// 📱 Media Query para navbar en mobile
+@media (max-width: 576px) {
+    .navbar-brand img {
+        height: 30px;
+        width: auto;
+    }
+}

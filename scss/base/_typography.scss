@@ -1,3 +1,24 @@
-// -------------------- 🖋️ Tipografías --------------------
+@import '../abstracts/variables';
 
-$fuente-principal: 'Inter', sans-serif;
+main {
+    p {
+        color: $color-texto;
+        font-size: $font-sm;
+        font-weight: bold;
+        text-align: justify;
+    }
+}
+
+h1 {
+    color: $color-azul-oscuro;
+    font-size: $font-xl;
+    text-align: center;
+    margin: $espaciado-grande auto;
+}
+
+h2 {
+    color: $color-azul;
+    font-size: $font-lg;
+    text-align: center;
+    margin: $espaciado-grande auto;
+}

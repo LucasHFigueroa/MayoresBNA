@@ -1,0 +1,233 @@
+
+@import '../abstracts/variables';
+@import '../abstracts/maps';
+@import '../abstracts/mixins';
+
+.contenedor {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  margin: $gap-lg auto;
+  max-width: 80%;
+  grid-auto-rows: minmax(260px, auto);
+  gap: $gap-lg;
+
+  a {
+    text-decoration: none;
+    color: inherit;
+  }
+
+  img {
+    max-width: 200px;
+  }
+}
+
+.caja {
+  border-radius: $radio-l;
+  padding: $padding-caja;
+  font-size: $font-lg;
+  font-weight: bold;
+  transition: transform 0.3s ease-in-out;
+
+  &:hover {
+    transform: scale(1.05);
+  }
+
+  p {
+    font-size: $font-lg;
+  }
+}
+
+.texto {
+  grid-column: 1/3;
+  grid-row: 1/2;
+  text-align: justify;
+}
+
+.asistente {
+  grid-column: 3/4;
+  grid-row: 1/2;
+}
+
+.bna {
+  grid-column: 4/5;
+  grid-row: 1/2;
+  @include caja(map-get($fondos, naranja), map-get($bordes, bna));
+}
+
+.atm {
+  grid-column: 1/2;
+  grid-row: 2/4;
+  @include caja(map-get($fondos, naranja), map-get($bordes, atm));
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.tienda {
+  grid-column: 2/3;
+  grid-row: 2/3;
+  @include caja(map-get($fondos, celeste), map-get($bordes, tienda));
+}
+
+.descuentos {
+  grid-column: 3/5;
+  grid-row: 2/3;
+  @include caja(map-get($fondos, naranja), map-get($bordes, descuentos));
+  justify-content: space-around;
+
+  div {
+    display: flex;
+    align-items: center;
+    gap: 100px;
+  }
+}
+
+.enlaces {
+  grid-column: 2/3;
+  grid-row: 3/4;
+  @include caja(map-get($fondos, celeste), map-get($bordes, enlaces));
+  justify-content: space-around;
+}
+
+.homebanking {
+  grid-column: 3/4;
+  grid-row: 3/4;
+  @include caja(map-get($fondos, naranja), map-get($bordes, homebanking));
+}
+
+.estafas {
+  grid-column: 4/5;
+  grid-row: 3/4;
+  @include caja(map-get($fondos, celeste), map-get($bordes, estafas));
+  justify-content: space-between;
+  font-size: 24px;
+}
+
+.prestamos {
+  grid-column: 1/2;
+  grid-row: 4/5;
+  @include caja(map-get($fondos, celeste), map-get($bordes, prestamos));
+  justify-content: space-between;
+  font-size: 24px;
+}
+
+.tarjetas {
+  grid-column: 2/4;
+  grid-row: 4/5;
+  @include caja(map-get($fondos, naranja), map-get($bordes, tarjetas));
+  justify-content: space-around;
+}
+
+.inversiones {
+  grid-column: 4/5;
+  grid-row: 4/5;
+  @include caja(map-get($fondos, naranja), map-get($bordes, inversiones));
+  justify-content: space-between;
+  font-size: 24px;
+}
+
+@media (max-width: 768px) {
+  .contenedor {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: $gap-md;
+  }
+  .contenedor > * {
+    grid-column: auto;
+    grid-row: auto;
+  }
+  .caja {
+    padding: 30px;
+    font-size: $font-md;
+
+    img {
+      max-width: 100%;
+      height: auto;
+    }
+
+    div {
+      gap: $gap-md;
+    }
+  }
+
+  .caja.descuentos div {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: $gap-md;
+  }
+}
+// Tablet (≥576px and <768px)
+
+@media (max-width: 768px) {
+  .contenedor {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: $gap-md;
+  }
+
+  .caja {
+    padding: 30px;
+    font-size: $font-md;
+
+    img {
+      max-width: 100%;
+      height: auto;
+    }
+
+    div {
+      gap: $gap-md;
+    }
+  }
+
+  .caja.descuentos div {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: $gap-md;
+  }
+}
+
+// Mobile (≤576px)
+@media (max-width: 576px) {
+  .carousel-inner img {
+    height: 164px;
+    width: auto;
+    margin: 0 auto;
+  }
+
+  .contenedor {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .caja {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+
+    img {
+      max-width: 100%;
+      height: auto;
+      object-fit: contain;
+    }
+
+    div {
+      width: 100%;
+      height: auto;
+      align-items: center;
+    }
+
+    &.descuentos div {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 100%;
+      gap: 0;
+    }
+  }
+}

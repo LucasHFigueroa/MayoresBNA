@@ -1,4 +1,9 @@
+// -------------------- 🖋️ Tipografías --------------------
+
+$fuente-principal: 'Inter', sans-serif;
+
 // -------------------- 🎨 Colores --------------------
+
 $color-naranja:        #f39555;
 $color-naranja-hover:  #d66a2b;
 $color-naranja-claro:  #ffebc7;
@@ -11,25 +16,31 @@ $color-texto:          #28262D;
 $color-gris-claro:     #f5f5f5;
 $color-blanco:         #ffffff;
 $color-negro:          #000000;
-$color-shadow-azul:    #007bff26;
+$color-shadow-azul:    rgba(0, 123, 255, 0.149);
+
+$sombra-azul-normal: 0 4px 12px ;
+$sombra-azul-hover: 0 6px 20px rgba(0, 123, 255, 0.4);
+$sombra-azul-elegante: 0 0.5rem 1.2rem rgba(0, 123, 255, 0.15);
+
 
 // -------------------- 📐 Tamaños de texto --------------------
+
 $font-xl: 40px;
 $font-lg: 32px;
 $font-md: 24px;
 $font-sm: 18px;
 
 // -------------------- 🔳 Espaciado y bordes --------------------
+
 $espaciado-grande: 60px;
 $espaciado-mediano: 40px;
 $espaciado-chico: 20px;
 
+$padding-caja: 28px;
+
+$gap-lg: 40px;
+$gap-md: 20px;
+
 $radio-l: 1rem;
 $radio-m: 0.5rem;
 $radio-s: 0.25rem;
-
-// -------------------- 📱 Breakpoints --------------------
-$break-sm: 576px;
-$break-md: 768px;
-$break-lg: 992px;
-$break-xl: 1200px;

@@ -1,6 +1,14 @@
-@mixin texto-parrafo {
-    color: $color-texto;
-    font-size: $font-md;
+@import '../abstracts/_variables.scss';
+
+@mixin caja($fondo, $borde) {
+    background-color: $fondo;
+    border: 4px solid $borde;
+    border-radius: $radio-l;
+    padding: 28px;
+    font-size: $font-lg;
     font-weight: bold;
-    text-align: justify;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: $gap-md;
 }

@@ -1,0 +1,19 @@
+@import '../abstracts/variables';
+
+$fondos: (
+  naranja: $color-naranja-claro,
+  celeste: $color-celeste-claro
+);
+
+$bordes: (
+  bna: $color-naranja,
+  descuentos: $color-naranja,
+  enlaces: $color-celeste,
+  estafas: $color-celeste,
+  homebanking: $color-naranja,
+  tarjetas: $color-naranja,
+  prestamos: $color-celeste,
+  inversiones: $color-naranja,
+  tienda: $color-celeste,
+  atm: $color-naranja
+);

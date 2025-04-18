@@ -17,7 +17,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
 
-    <title>Solicitá tu tarjeta</title>
+    <title>Solicite su tarjeta</title>
 </head>
 
 <body>
@@ -55,8 +55,8 @@
                             <a class="nav-link fs-5 px-3 fw-bold texto-azul" href="nosotros.html">NOSOTROS</a>
                         </li>
                         <li class="nav-item">
-                            <a class="btn btn-warning fs-5 px-3 fw-bold text-white rounded-pill fondo-naranja"
-                                href="solicitud-tarjeta-de-credito.html">PEDÍ TU TARJETA</a>
+                            <a class="btn fs-5 px-3 fw-bold text-white rounded-pill fondo-naranja"
+                                href="solicitud-tarjeta-de-credito.html">PIDA SU TARJETA</a>
                         </li>
                     </ul>
                 </div>
@@ -83,21 +83,18 @@
         </div>
 
         <!-- formulario -->
+        <section class="flex">
+            <h2>¿Cómo solicitar su tarjeta?</h2>
+            <p class="text-center">Para solicitar su tarjeta de crédito del Banco Nación, complete el siguiente formulario</p>
 
-        <h2>Primero debe completar los siguientes datos</h2>
-        <form id="solicitud-tarjeta">
-            <label for="CUIL">Ingrese su N° de CUIL</label>
-            <input type="number" id="iCUIL" name="CUIL">
-
-            <label for="iemail">Ingrese su correo electrónico</label>
-            <input type="email" id="iemail" name="email">
-
-            <label for="iemail">Reingrese su correo electrónico</label>
-            <input type="email" id="iemail" name="email">
+            <form id="solicitud-tarjeta">
+            <input type="number" id="iCUIL" name="CUIL" placeholder="Ingrese su N° de CUIL" style="font-style:italic">
+            <input type="email" id="iemail" name="email" placeholder="Ingrese su correo electrónico" style="font-style:italic">
+            <input type="email" id="iemail" name="email" placeholder="Reingrese su correo electrónico" style="font-style:italic">
             <br>
-
             <input type="submit" value="ENVIAR">
         </form>
+        </section>
     </main>
 
     <!-- Pie de página -->

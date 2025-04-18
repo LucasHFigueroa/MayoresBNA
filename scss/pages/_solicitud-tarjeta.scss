@@ -1,0 +1,43 @@
+@import '../abstracts/variables';
+
+.top-solicitud {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: $gap-lg;
+    max-width: 95%;
+    margin: 0 auto;
+
+    div {
+        display: flex;
+        flex-wrap: wrap;
+        gap: $gap-md;
+        align-items: center;
+    }
+
+    // 📱 Tablet
+    @media (max-width: 768px) {
+        img {
+            display: block;
+            margin: 0 auto;
+            
+        }
+
+    @media (max-width: 576px) {
+            flex-direction: column;
+            gap: 40px;
+            margin: 5%;
+
+            img {
+                max-width: 100%;
+            }
+
+            div {
+                flex-direction: column;
+                align-items: center;
+                gap: 15px;
+            }
+        }
+    }
+}

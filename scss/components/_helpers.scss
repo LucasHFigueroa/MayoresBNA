@@ -1,0 +1,53 @@
+@import '../abstracts/variables';
+
+
+.sombra-azul {
+    box-shadow:
+        inset 0 1px 3px rgba(0, 123, 255, 0.2),
+        $sombra-azul-normal;
+    transition: box-shadow 0.3s ease, transform 0.2s ease;
+    border-radius: 1rem;
+    background: #ffffff;
+
+    &:hover {
+        box-shadow:
+            inset 0 1px 3px rgba(0, 123, 255, 0.2),
+            $sombra-azul-hover;
+        transform: translateY(-2px);
+    }
+}
+
+.shadow-blue {
+    box-shadow: $sombra-azul-elegante;
+}
+
+.altura {
+    align-items: flex-start;
+}
+.flex {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    p {
+        max-width: 90%;
+    }
+}
+
+.fondo-naranja {
+    background-color: $color-naranja;
+    transition: background 0.3s ease-in-out;
+
+    &:hover {
+        background-color: $color-naranja-hover;
+    }
+}
+
+.texto-azul {
+    color: $color-azul;
+    transition: color 0.3s ease-in-out;
+
+    &:hover {
+        color: $color-azul-hover;
+    }
+}

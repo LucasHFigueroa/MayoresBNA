@@ -1,0 +1,22 @@
+@import '../abstracts/variables';
+
+.sidebar-link {
+    display: block;
+    padding: 0.5rem 0.75rem;
+    border-radius: $radio-m;
+    text-decoration: none;
+    color: $color-texto;
+    font-weight: 500;
+    transition: background-color 0.3s, color 0.3s;
+
+    &:hover {
+        transform: translateX(5px);
+    }
+
+    &:hover,
+    &:focus {
+        background-color: rgba(0, 123, 255, 0.15);
+        color: #026e87;
+        outline: none;
+    }
+}
