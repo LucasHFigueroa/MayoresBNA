@@ -47,7 +47,6 @@ h2 {
 }
 
 .sombra-azul {
-  box-shadow: inset 0 1px 3px rgba(0, 123, 255, 0.2), 0 4px 12px;
   transition: box-shadow 0.3s ease, transform 0.2s ease;
   border-radius: 1rem;
   background: #ffffff;
@@ -179,7 +178,6 @@ h2 {
 }
 
 .sombra-azul {
-  box-shadow: inset 0 1px 3px rgba(0, 123, 255, 0.2), 0 4px 12px;
   transition: box-shadow 0.3s ease, transform 0.2s ease;
   border-radius: 1rem;
   background: #ffffff;
@@ -268,23 +266,21 @@ footer {
 }
 
 .caja {
-  border-radius: 1rem;
-  padding: 28px;
-  font-size: 32px;
-  font-weight: bold;
   transition: transform 0.3s ease-in-out;
 }
 .caja:hover {
-  transform: scale(1.05);
+  transform: scale(1.025);
 }
 .caja p {
-  font-size: 32px;
+  font-size: 24px;
 }
 
 .texto {
   grid-column: 1/3;
   grid-row: 1/2;
   text-align: justify;
+  font-weight: bold;
+  font-size: 24px;
 }
 
 .asistente {
@@ -299,7 +295,7 @@ footer {
   border: 4px solid #f39555;
   border-radius: 1rem;
   padding: 28px;
-  font-size: 32px;
+  font-size: 24px;
   font-weight: bold;
   display: flex;
   flex-direction: column;
@@ -314,7 +310,7 @@ footer {
   border: 4px solid #f39555;
   border-radius: 1rem;
   padding: 28px;
-  font-size: 32px;
+  font-size: 24px;
   font-weight: bold;
   display: flex;
   flex-direction: column;
@@ -322,6 +318,7 @@ footer {
   gap: 20px;
   justify-content: space-around;
   flex-wrap: wrap;
+  text-align: center;
 }
 
 .tienda {
@@ -331,7 +328,7 @@ footer {
   border: 4px solid #109ED4;
   border-radius: 1rem;
   padding: 28px;
-  font-size: 32px;
+  font-size: 24px;
   font-weight: bold;
   display: flex;
   flex-direction: column;
@@ -346,7 +343,7 @@ footer {
   border: 4px solid #f39555;
   border-radius: 1rem;
   padding: 28px;
-  font-size: 32px;
+  font-size: 24px;
   font-weight: bold;
   display: flex;
   flex-direction: column;
@@ -367,13 +364,14 @@ footer {
   border: 4px solid #109ED4;
   border-radius: 1rem;
   padding: 28px;
-  font-size: 32px;
+  font-size: 24px;
   font-weight: bold;
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 20px;
   justify-content: space-around;
+  text-align: center;
 }
 
 .homebanking {
@@ -383,7 +381,7 @@ footer {
   border: 4px solid #f39555;
   border-radius: 1rem;
   padding: 28px;
-  font-size: 32px;
+  font-size: 24px;
   font-weight: bold;
   display: flex;
   flex-direction: column;
@@ -398,7 +396,7 @@ footer {
   border: 4px solid #109ED4;
   border-radius: 1rem;
   padding: 28px;
-  font-size: 32px;
+  font-size: 24px;
   font-weight: bold;
   display: flex;
   flex-direction: column;
@@ -415,7 +413,7 @@ footer {
   border: 4px solid #109ED4;
   border-radius: 1rem;
   padding: 28px;
-  font-size: 32px;
+  font-size: 24px;
   font-weight: bold;
   display: flex;
   flex-direction: column;
@@ -432,7 +430,7 @@ footer {
   border: 4px solid #f39555;
   border-radius: 1rem;
   padding: 28px;
-  font-size: 32px;
+  font-size: 24px;
   font-weight: bold;
   display: flex;
   flex-direction: column;
@@ -448,7 +446,7 @@ footer {
   border: 4px solid #f39555;
   border-radius: 1rem;
   padding: 28px;
-  font-size: 32px;
+  font-size: 24px;
   font-weight: bold;
   display: flex;
   flex-direction: column;
@@ -486,7 +484,7 @@ footer {
     gap: 20px;
   }
 }
-@media (max-width: 768px) {
+@media (max-width: 992px) {
   .contenedor {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -558,20 +556,20 @@ footer {
   margin: 0 auto;
 }
 .top-solicitud div {
-  display: flex;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
   gap: 20px;
-  align-items: center;
+  align-items: stretch;
 }
-@media (max-width: 768px) {
+@media (max-width: 992px) {
   .top-solicitud img {
     display: block;
-    margin: 0 auto;
   }
 }
-@media (max-width: 768px) and (max-width: 576px) {
+@media (max-width: 576px) {
   .top-solicitud {
-    flex-direction: column;
+    display: grid;
+    grid-template-columns: repeat(1 fr);
     gap: 40px;
     margin: 5%;
   }
@@ -579,9 +577,10 @@ footer {
     max-width: 100%;
   }
   .top-solicitud div {
+    display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 15px;
+    gap: 1rem;
   }
 }
 

@@ -10,34 +10,35 @@
     margin: 0 auto;
 
     div {
-        display: flex;
-        flex-wrap: wrap;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
         gap: $gap-md;
-        align-items: center;
+        align-items: stretch;
     }
 
     // 📱 Tablet
-    @media (max-width: 768px) {
+    @media (max-width: 992px) {
         img {
             display: block;
-            margin: 0 auto;
-            
+        }
+    }
+
+    // 📱 Mobile
+    @media (max-width: 576px) {
+        display: grid;
+        grid-template-columns: repeat( 1 fr);
+        gap: 40px;
+        margin: 5%;
+
+        img {
+            max-width: 100%;
         }
 
-    @media (max-width: 576px) {
+        div {
+            display: flex;
             flex-direction: column;
-            gap: 40px;
-            margin: 5%;
-
-            img {
-                max-width: 100%;
-            }
-
-            div {
-                flex-direction: column;
-                align-items: center;
-                gap: 15px;
-            }
+            align-items: center;
+            gap: 1rem;
         }
     }
 }
