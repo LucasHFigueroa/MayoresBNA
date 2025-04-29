@@ -26,7 +26,7 @@
     // 📱 Mobile
     @media (max-width: 576px) {
         display: grid;
-        grid-template-columns: repeat( 1 fr);
+        grid-template-columns: 1 fr;
         gap: 40px;
         margin: 5%;
 

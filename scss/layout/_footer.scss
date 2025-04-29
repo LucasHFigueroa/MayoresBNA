@@ -1,6 +1,23 @@
 @import '../abstracts/variables';
 
 footer {
-    background-color: $color-celeste;
+    background-color: $color-footer;
     text-align: center;
+
+    a {
+        text-decoration: none;
+
+        &:hover {
+            color: $color-naranja;
+        }
+
+        img {
+            width: 24px;
+            height: 24px;
+
+            &:hover {
+                transform: scale(1.2);
+            }
+        }
+    }
 }

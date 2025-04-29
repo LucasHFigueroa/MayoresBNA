@@ -4,6 +4,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Guía de uso de la aplicación BNA+. Aprenderá a utilizar todas las funciones de la app y lo ayudaremos desde su instalación.">
+    <meta name="keywords" content="BNA, Banco Nación, jubilados, BNA+, guía de uso, tutorial, aplicación, homebanking, pagos, QR, servicios, impuestos">
+    <title>Guía de uso BNA+ - Mayores BNA</title>
+    <link rel="icon" href="../img/favicon.png" type="image/png">
 
     <!-- Estilos de Bootstrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
@@ -13,12 +17,9 @@
     <link rel="stylesheet" href="../css/style.css">
 
     <!-- Google Fonts -->
-
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
-
-    <title>Guía de uso BNA+</title>
 </head>
 
 <body>
@@ -30,7 +31,7 @@
             <div class="container">
                 <!-- Logo -->
                 <a class="navbar-brand" href="../index.html">
-                    <img src="../img/logo.svg" alt="logotipo mayores bna colores naranja y celeste" height="30">
+                    <img src="../img/logo.svg" alt="Logotipo de Mayores BNA, Banco Nación Argentina" height="30">
                 </a>
 
                 <!-- Botón de menú responsive -->
@@ -75,7 +76,7 @@
         <section class="container my-5">
             <div class="row align-items-center">
                 <div class="col-md-6">
-                <p> ¡No más largas filas afuera del banco! Aquí encontrará todas las funciones que BNA+ puede ofrecerle. Podrá ver su saldo, transferir dinero, pagar con QR, acceder a <strong>descuentos</strong> y realizar trámites bancarios desde la comodidad de su casa.</p>
+                <p> ¡No más largas filas afuera del banco! Aquí encontrará todas las funciones que BNA+ puede ofrecerle. Podrá ver su saldo, transferir dinero, pagar con QR, acceder a descuentos y realizar trámites bancarios desde la comodidad de su casa.</p>
                 </div>
                 <div class="col-md-6">
                 <a href="https://play.google.com/store/search?q=bna&c=apps" target="_blank">
@@ -150,7 +151,9 @@
             <p>Si tiene alguna duda o pregunta sobre el uso de BNA+ no dude en contactarse con nosotros.</p>
 
             <form id="pregunta-cliente">
-                <textarea id="espacio-pregunta" name="pregunta" placeholder="Escriba su pregunta aquí..."></textarea>
+                <input type="email" id="iemail" name="email" placeholder="Ingrese su correo electrónico" style="font-style:italic">
+                <textarea id="espacio-pregunta" name="pregunta" placeholder="Escriba su pregunta aquí..." style="font-style:italic"></textarea>
+                <br>
                 <input type="submit" value="ENVIAR">
             </form>
         </section>  
@@ -158,13 +161,53 @@
 
     <!-- Pie de página -->
 
-    <footer>
-        <p>
-            Necesita ayuda? llámenos <br>0800-199-1111
-        </p>
-        <p>
-            Un sitio web de Banco Nación rediseñado por Lucas Figueroa
-        </p>
+    <footer class="footer text-center text-white py-5 fs-5 fw-semibold">
+        <div class="container">
+
+            <p class="mb-3 small">
+                ¿Necesitás ayuda? Llamanos al <strong>0800-199-1111</strong>
+            </p>
+
+            <!-- Enlaces oficiales del Banco Nación -->
+            <div class="mb-4 d-flex flex-wrap justify-content-center gap-3 small">
+                <a href="https://www.bna.com.ar/Personas" class="link-light text-decoration-underline"
+                    target="_blank">Sitio Oficial BNA</a>
+                <a href="https://www.tiendabna.com.ar/" class="link-light text-decoration-underline"
+                    target="_blank">Tienda BNA</a>
+                <a href="https://mayoresactivos.com.ar/" class="link-light text-decoration-underline"
+                    target="_blank">Mayores Activos</a>
+                <a href="https://semananacion.com.ar/semananacion" class="link-light text-decoration-underline"
+                    target="_blank">Semana Nación</a>
+            </div>
+
+            <!-- Redes sociales -->
+            <div class="mb-4">
+                <a href="https://www.facebook.com/banconacion" target="_blank" aria-label="Banco Nación en Facebook"
+                    class="mx-2">
+                    <img src="../img/icon-facebook.png" alt="Facebook" width="24" height="24">
+                </a>
+                <a href="https://twitter.com/banconacion" target="_blank" aria-label="Banco Nación en Twitter"
+                    class="mx-2">
+                    <img src="../img/icon-x.png" alt="Twitter" width="24" height="24">
+                </a>
+                <a href="https://www.instagram.com/banconacion/" target="_blank" aria-label="Banco Nación en Instagram"
+                    class="mx-2">
+                    <img src="../img/icon-instagram.png" alt="Instagram" width="24" height="24">
+                </a>
+                <a href="https://www.linkedin.com/company/banconacion/" target="_blank"
+                    aria-label="Banco Nación en LinkedIn" class="mx-2">
+                    <img src="../img/icon-linkedin.png" alt="LinkedIn" width="24" height="24">
+                </a>
+                <a href="https://www.youtube.com/banconacion" target="_blank" aria-label="Banco Nación en YouTube"
+                    class="mx-2">
+                    <img src="../img/icon-youtube.png" alt="YouTube" width="24" height="24">
+                </a>
+            </div>
+
+            <p class="mb-2 small">
+                Un sitio de <strong>Banco Nación</strong> &bull; Rediseñado por Lucas Figueroa
+            </p>
+        </div>
     </footer>
     <!-- Bootstrap -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"

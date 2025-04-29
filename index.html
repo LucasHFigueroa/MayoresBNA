@@ -3,7 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
+    <meta name="description" content="Sitio web para jubilados del Banco Nación Argentina. Aquí encontrará información sobre BNA+, descuentos, y más.">
+    <meta name="keywords" content="BNA, Banco Nación, jubilados, BNA+, descuentos, promociones, homebanking, préstamos, tarjetas de crédito, inversiones">
+    <title>Inicio - Mayores BNA</title>
+    <link rel="icon" href="img/favicon.png" type="image/png">
+    
     <!-- Estilos de Bootstrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
@@ -12,12 +16,9 @@
     <link rel="stylesheet" href="css/style.css">
 
     <!-- Google Fonts -->
-
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
-
-    <title>Mayores BNA</title>
 </head>
 
 <body>
@@ -25,43 +26,43 @@
     <!-- Barra de navegación -->
 
     <header>
-            <nav class="navbar navbar-expand-lg bg-white fixed-top shadow p-3 ">
-                <div class="container">
-                    <!-- Logo -->
-                    <a class="navbar-brand" href="index.html">
-                        <img src="img/logo.svg" alt="logotipo mayores bna colores naranja y celeste" height="30">
-                    </a>
+        <nav class="navbar navbar-expand-lg bg-white fixed-top shadow p-3 ">
+            <div class="container">
+                <!-- Logo -->
+                <a class="navbar-brand" href="index.html">
+                    <img src="img/logo.svg" alt="Logotipo de Mayores BNA, Banco Nación Argentina" height="30">
+                </a>
 
-                    <!-- Botón de menú responsive -->
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-                        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
+                <!-- Botón de menú responsive -->
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
 
-                    <!-- Links de navegación -->
-                    <div class="collapse navbar-collapse" id="navbarNav">
-                        <ul class="navbar-nav ms-auto">
-                            <li class="nav-item">
-                                <a class="nav-link fs-5 px-3 fw-bold texto-azul" href="index.html">INICIO</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link fs-5 px-3 fw-bold texto-azul" href="pages/bna-mas.html">BNA+</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link fs-5 px-3 fw-bold texto-azul" href="pages/descuentos-y-promociones.html">DESCUENTOS Y
-                                    PROMOCIONES</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link fs-5 px-3 fw-bold texto-azul" href="pages/nosotros.html">NOSOTROS</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="btn fondo-naranja fs-5 px-3 fw-bold text-white rounded-pill"
-                                    href="pages/solicitud-tarjeta-de-credito.html">PIDA SU TARJETA</a>
-                            </li>
-                        </ul>
-                    </div>
+                <!-- Links de navegación -->
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link fs-5 px-3 fw-bold texto-azul" href="index.html">INICIO</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link fs-5 px-3 fw-bold texto-azul" href="pages/bna-mas.html">BNA+</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link fs-5 px-3 fw-bold texto-azul" href="pages/descuentos-y-promociones.html">DESCUENTOS Y
+                                PROMOCIONES</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link fs-5 px-3 fw-bold texto-azul" href="pages/nosotros.html">NOSOTROS</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="btn fondo-naranja fs-5 px-3 fw-bold text-white rounded-pill"
+                                href="pages/solicitud-tarjeta-de-credito.html">PIDA SU TARJETA</a>
+                        </li>
+                    </ul>
                 </div>
-            </nav>
+            </div>
+        </nav>
 
     </header>
 
@@ -72,13 +73,17 @@
         <div id="carouselExample" class="carousel slide" data-bs-ride="carousel">
             <div class="carousel-inner">
                 <div class="carousel-item active">
-                    <img src="img/carousel-sra.png" class="d-block w-100 object-fit-cover" alt="Imagen 1">
+                    <a href="pages/solicitud-tarjeta-de-credito.html">
+                    <img src="img/carousel-sra.png" class="d-block w-100 object-fit-cover" alt="Mujer sonriente invitando a solicitar la tarjeta de crédito del Banco Nación.">
+                    </a>
                 </div>
                 <div class="carousel-item">
-                    <img src="img/carousel-bna+.jpg" class="d-block w-100 object-fit-cover" alt="Imagen 2">
+                    <a href="pages/bna-mas.html">
+                    <img src="img/carousel-bnamas.jpg" class="d-block w-100 object-fit-cover" alt="Toque aquí para ir a la guía de uso de BNA+">
+                    </a>
                 </div>
                 <div class="carousel-item">
-                    <img src="img/carousel-estafa.jpg" class="d-block w-100 object-fit-cover" alt="Imagen 3">
+                    <img src="img/carousel-estafa.jpg" class="d-block w-100 object-fit-cover" alt="Descubra cómo cuidarse de las estafas">
                 </div>
             </div>
         
@@ -94,9 +99,9 @@
         
             <!-- Indicadores -->
             <div class="carousel-indicators">
-                <button type="button" data-bs-target="#carouselExample" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-                <button type="button" data-bs-target="#carouselExample" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                <button type="button" data-bs-target="#carouselExample" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                <button type="button" data-bs-target="#carouselExample" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Primera diapositiva"></button>
+                <button type="button" data-bs-target="#carouselExample" data-bs-slide-to="1" aria-label="Segunda diapositiva"></button>
+                <button type="button" data-bs-target="#carouselExample" data-bs-slide-to="2" aria-label="Tercera diapositiva"></button>
             </div>
         </div>
 
@@ -119,48 +124,48 @@
             <a href="pages/bna+.html">
                 <div class="caja bna">
                     <p>BNA+</p>
-                    <img src="img/ilustracion-bna.svg" alt="Información y ayuda sobre BNA+">
+                    <img src="img/ilustracion-bna.png" alt="Lo guiaremos en el uso de la aplicación del Banco Nación, desde su registro hasta su uso diario.">
                 </div>
             </a>
 
             <div class="caja estafas">CUIDESE DE <BR> LAS ESTAFAS
-                <img src="img/ilustracion-estafa.svg" alt="Cuidate de las estafas">
+                <img src="img/ilustracion-estafa.svg" alt="Le explicaremos los métodos qué utilizan los estafadores para que no sea una víctima.">
             </div>
 
             <div class="caja tienda">TIENDA BNA
-                <img src="img/ilustracion-tienda.svg" alt="Tienda BNA+">
+                <img src="img/ilustracion-tienda.svg" alt="Le daremos un recorrido a nuestra Tienda BNA+ y cómo utilizarla para comprar productos y servicios.">
             </div>
 
             <a href="pages/descuentos-y-promociones.html" class="caja descuentos">
                 <div>
                     <p>DESCUENTOS Y <br>PROMOCIONES</p>
-                    <img src="img/ilustracion-promos.svg" alt="Descuentos y promociones">
+                    <img src="img/ilustracion-promos.png" alt="Conozca todas las formas de ahorrar con los descuentos que le ofrece el Banco Nación.">
                 </div>
             </a>
 
             <div class="caja enlaces">ENLACES Y TELÉFONOS ÚTILES
-                <img src="img/ilustracion-enlaces.svg" alt="Enlaces y teléfonos útiles">
+                <img src="img/ilustracion-enlaces.png" alt="Es importante tener esta información al alcance de la mano. N° de teléfono y enlaces a los servicios más utilizados.">
             </div>
 
             <div class="caja homebanking">HOMEBANKING
-                <img src="img/ilustracion-homebanking.svg" alt="Información y ayuda sobre homebanking">
+                <img src="img/ilustracion-homebanking.png" alt="Guías de uso de los servicios de Homebanking del Banco Nación.">
             </div>
 
             <div class="caja atm">CAJERO AUTOMÁTICO
-                <img src="img/ilustracion-atm.svg" alt="">
+                <img src="img/ilustracion-atm.png" alt="Tutoriales de uso de los cajeros automáticos de la Red Link del Banco Nación.">
             </div>
 
             <div class="caja prestamos">PRÉSTAMOS
-                <img src="img/ilustracion-prestamos.svg" alt="Información sobre préstamos">
+                <img src="img/ilustracion-prestamos.png" alt="Información, simuladores y requisitos para acceder a los préstamos del Banco Nación.">
             </div>
 
             <div class="caja tarjetas">
                 <p>TARJETA DE CRÉDITO</p>
-                <img src="img/ilustracion-tarjetas.svg" alt="Información y ayuda sobre tarjetas de crédito">
+                <img src="img/ilustracion-tarjeta.png" alt="Le explicaremos las buenas prácticas para el uso de su tarjeta de crédito y todo lo que siempre quiso saber.">
             </div>
 
             <div class="caja inversiones">INVERSIONES
-                <img src="img/ilustracion-inversiones.svg" alt="Información y ayuda sobre inversiones">
+                <img src="img/ilustracion-inversiones.png" alt="En esta sección le explicaremos cómo invertir su dinero y los productos que el Banco Nación tiene para ofrecerle.">
             </div>
         </div>
 
@@ -168,13 +173,52 @@
 
     <!-- Pie de página -->
 
-    <footer>
-        <p>
-            Necesitás ayuda? llamanos <br>0800-199-1111
-        </p>
-        <p>
-            Un sitio web de Banco Nación rediseñado por Lucas Figueroa
-        </p>
+    <footer class="footer text-center text-white py-5 fs-5 fw-semibold">
+        <div class="container">
+
+            <p class="mb-3 small">
+                ¿Necesitás ayuda? Llamanos al <strong>0800-199-1111</strong>
+            </p>
+
+            <!-- Enlaces oficiales del Banco Nación -->
+            <div class="mb-4 d-flex flex-wrap justify-content-center gap-3 small">
+                <a href="https://www.bna.com.ar/Personas" class="link-light text-decoration-underline"
+                    target="_blank">Sitio Oficial BNA</a>
+                <a href="https://www.tiendabna.com.ar/" class="link-light text-decoration-underline"
+                    target="_blank">Tienda BNA</a>
+                <a href="https://mayoresactivos.com.ar/" class="link-light text-decoration-underline"
+                    target="_blank">Mayores Activos</a>
+                <a href="https://semananacion.com.ar/semananacion" class="link-light text-decoration-underline"
+                    target="_blank">Semana Nación</a>
+            </div>
+
+            <!-- Redes sociales -->
+            <div class="mb-4">
+                <a href="https://www.facebook.com/banconacion" target="_blank" aria-label="Banco Nación en Facebook"
+                    class="mx-2">
+                    <img src="img/icon-facebook.png" alt="Facebook" width="24" height="24">
+                </a>
+                <a href="https://twitter.com/banconacion" target="_blank" aria-label="Banco Nación en Twitter"
+                    class="mx-2">
+                    <img src="img/icon-x.png" alt="Twitter" width="24" height="24">
+                </a>
+                <a href="https://www.instagram.com/banconacion/" target="_blank" aria-label="Banco Nación en Instagram"
+                    class="mx-2">
+                    <img src="img/icon-instagram.png" alt="Instagram" width="24" height="24">
+                </a>
+                <a href="https://www.linkedin.com/company/banconacion/" target="_blank"
+                    aria-label="Banco Nación en LinkedIn" class="mx-2">
+                    <img src="img/icon-linkedin.png" alt="LinkedIn" width="24" height="24">
+                </a>
+                <a href="https://www.youtube.com/banconacion" target="_blank" aria-label="Banco Nación en YouTube"
+                    class="mx-2">
+                    <img src="img/icon-youtube.png" alt="YouTube" width="24" height="24">
+                </a>
+            </div>
+            <p class="mb-2 small">
+                Un sitio de <strong>Banco Nación</strong> &bull; Rediseñado por Lucas Figueroa
+            </p>
+        </div>
     </footer>
 
     <!-- Bootstrap -->
