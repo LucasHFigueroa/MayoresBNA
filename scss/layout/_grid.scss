@@ -49,13 +49,13 @@
 .bna {
   grid-column: 4/5;
   grid-row: 1/2;
-  @include caja(map-get($fondos, naranja), map-get($bordes, bna));
+  @include caja(map-get($fondos, celeste), map-get($bordes, celeste));
 }
 
 .atm {
   grid-column: 1/2;
   grid-row: 2/4;
-  @include caja(map-get($fondos, naranja), map-get($bordes, atm));
+  @include caja(map-get($fondos, naranja), map-get($bordes, naranja));
   justify-content: space-around;
   flex-wrap: wrap;
   text-align: center;
@@ -64,13 +64,13 @@
 .tienda {
   grid-column: 2/3;
   grid-row: 2/3;
-  @include caja(map-get($fondos, celeste), map-get($bordes, tienda));
+  @include caja(map-get($fondos, celeste), map-get($bordes, celeste));
 }
 
 .descuentos {
   grid-column: 3/5;
   grid-row: 2/3;
-  @include caja(map-get($fondos, naranja), map-get($bordes, descuentos));
+  @include caja(map-get($fondos, naranja), map-get($bordes, naranja));
   justify-content: space-around;
 
   div {
@@ -83,7 +83,7 @@
 .enlaces {
   grid-column: 2/3;
   grid-row: 3/4;
-  @include caja(map-get($fondos, celeste), map-get($bordes, enlaces));
+  @include caja(map-get($fondos, celeste), map-get($bordes, celeste));
   justify-content: space-around;
   text-align: center;
 }
@@ -91,13 +91,13 @@
 .homebanking {
   grid-column: 3/4;
   grid-row: 3/4;
-  @include caja(map-get($fondos, naranja), map-get($bordes, homebanking));
+  @include caja(map-get($fondos, celeste), map-get($bordes, celeste));
 }
 
 .estafas {
   grid-column: 4/5;
   grid-row: 3/4;
-  @include caja(map-get($fondos, celeste), map-get($bordes, estafas));
+  @include caja(map-get($fondos, celeste), map-get($bordes, celeste));
   justify-content: space-between;
   font-size: 24px;
 }
@@ -105,7 +105,7 @@
 .prestamos {
   grid-column: 1/2;
   grid-row: 4/5;
-  @include caja(map-get($fondos, celeste), map-get($bordes, prestamos));
+  @include caja(map-get($fondos, celeste), map-get($bordes, celeste));
   justify-content: space-between;
   font-size: 24px;
 }
@@ -113,14 +113,14 @@
 .tarjetas {
   grid-column: 2/4;
   grid-row: 4/5;
-  @include caja(map-get($fondos, naranja), map-get($bordes, tarjetas));
+  @include caja(map-get($fondos, naranja), map-get($bordes, naranja));
   justify-content: space-around;
 }
 
 .inversiones {
   grid-column: 4/5;
   grid-row: 4/5;
-  @include caja(map-get($fondos, naranja), map-get($bordes, inversiones));
+  @include caja(map-get($fondos, celeste), map-get($bordes, celeste));
   justify-content: space-between;
   font-size: 24px;
 }

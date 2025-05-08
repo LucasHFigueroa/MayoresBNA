@@ -313,8 +313,8 @@ footer a img:hover {
 .bna {
   grid-column: 4/5;
   grid-row: 1/2;
-  background-color: #ffebc7;
-  border: 4px solid #f39555;
+  background-color: #B6E6F2;
+  border: 4px solid #109ED4;
   border-radius: 1rem;
   padding: 28px;
   font-size: 24px;
@@ -399,8 +399,8 @@ footer a img:hover {
 .homebanking {
   grid-column: 3/4;
   grid-row: 3/4;
-  background-color: #ffebc7;
-  border: 4px solid #f39555;
+  background-color: #B6E6F2;
+  border: 4px solid #109ED4;
   border-radius: 1rem;
   padding: 28px;
   font-size: 24px;
@@ -464,8 +464,8 @@ footer a img:hover {
 .inversiones {
   grid-column: 4/5;
   grid-row: 4/5;
-  background-color: #ffebc7;
-  border: 4px solid #f39555;
+  background-color: #B6E6F2;
+  border: 4px solid #109ED4;
   border-radius: 1rem;
   padding: 28px;
   font-size: 24px;
